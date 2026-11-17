@@ -4,7 +4,6 @@ import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 import { VueQueryPlugin } from '@tanstack/vue-query';
-import goatcounter from './plugin/goatcounter';
 
 import './styles/base.styl';
 import 'element-plus/theme-chalk/dark/css-vars.css';
@@ -15,7 +14,6 @@ export default {
   enhanceApp({ app }) {
     app.use(VueQueryPlugin);
     enhanceAppWithTabs(app);
-    goatcounter({ id: "cuong-tran" });
   },
   Layout,
 } satisfies Theme

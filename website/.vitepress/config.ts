@@ -21,8 +21,8 @@ const hostname: string = env.VITE_HOSTNAME || 'http://localhost:4173';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Yūzōnō",
-  description: "An extension store for Mihon/Komikku, Aniyomi/Anikku and variants.",
+  title: "idjo",
+  description: "Aniyomi extensions by idjo. Works in Aniyomi and forks such as Anikku.",
   cleanUrls: true,
   transformHead: (context) => {
     context.head.push(['meta', { name: 'robots', content: 'noindex, nofollow' }]);
@@ -38,18 +38,13 @@ export default defineConfig({
     socialLinks: [
       {
         icon: 'github',
-        link: 'https://github.com/yuzono/',
+        link: 'https://github.com/idjoo/extensions-source',
         ariaLabel: 'Project GitHub',
-      },
-      {
-        icon: 'discord',
-        link: 'https://discord.gg/85MZhUX688',
-        ariaLabel: 'Discord Server',
       },
     ],
     
     editLink: {
-      pattern: 'https://github.com/yuzono/yuzono.github.io/edit/main/website/:path',
+      pattern: 'https://github.com/idjoo/idjoo.github.io/edit/main/website/:path',
       text: 'Help us improve this page',
     },
 
