@@ -25,7 +25,7 @@ jobs:
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.0.2
 
       - name: Setup PNPM
-        uses: pnpm/action-setup@f520eceda224fe1a4aed5a2a27a194379a409996 # v6.0.8
+        uses: pnpm/action-setup@5eea8caf49c844361c1e9ddc1324e179c54b58e9 # v6.0.8
         with:
           version: 11
 
